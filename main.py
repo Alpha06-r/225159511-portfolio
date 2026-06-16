@@ -7,7 +7,7 @@ def main(page: ft.Page):
     page.scroll = ft.ScrollMode.AUTO
 
     # Base URL for images on GitHub
-    GITHUB_BASE = "https://raw.githubusercontent.com/Alpha06-r/225159511-portfolio/main/assets"
+    GITHUB_BASE = "https://raw.githubusercontent.com/Alpha06-r/225159511-portfolio/main/Assets"
 
     # Colors
     BLUE = "#1565C0"
