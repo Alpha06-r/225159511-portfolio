@@ -4,8 +4,10 @@ import flet as ft
 def main(page: ft.Page):
     page.title = "Rehabeam Portfolio"
     page.theme_mode = ft.ThemeMode.DARK
-    page.assets_dir = "assets"
     page.scroll = ft.ScrollMode.AUTO
+
+    # Base URL for images on GitHub
+    GITHUB_BASE = "https://raw.githubusercontent.com/Alpha06-r/225159511-portfolio/main/assets"
 
     # Colors
     BLUE = "#1565C0"
@@ -17,7 +19,7 @@ def main(page: ft.Page):
         content=ft.Column(
             [
                 ft.Image(
-                    src="ImageFit.jpg",
+                    src=f"{GITHUB_BASE}/ImageFit.jpg",
                     width=180,
                 ),
 
@@ -194,19 +196,19 @@ responses to infrastructure issues.
                 ),
 
                 ft.Text("Login Screen", color=WHITE),
-                ft.Image(src="login.png", width=700),
+                ft.Image(src=f"{GITHUB_BASE}/login.png", width=700),
 
                 ft.Text("Dashboard", color=WHITE),
-                ft.Image(src="dashboard.png", width=700),
+                ft.Image(src=f"{GITHUB_BASE}/dashboard.png", width=700),
 
                 ft.Text("Admin Panel", color=WHITE),
-                ft.Image(src="admin.png", width=700),
+                ft.Image(src=f"{GITHUB_BASE}/admin.png", width=700),
 
                 ft.Text("Map View", color=WHITE),
-                ft.Image(src="map.png", width=700),
+                ft.Image(src=f"{GITHUB_BASE}/map.png", width=700),
 
                 ft.Text("Report Leak Screen", color=WHITE),
-                ft.Image(src="report_leak.png", width=700),
+                ft.Image(src=f"{GITHUB_BASE}/report_leak.png", width=700),
             ]
         ),
         padding=20,
@@ -223,14 +225,14 @@ responses to infrastructure issues.
                     color=GOLD,
                 ),
 
-                ft.Image(src="cert1.png", width=700),
-                ft.Image(src="cert2.png", width=700),
-                ft.Image(src="cert3.png", width=700),
-                ft.Image(src="cert4.png", width=700),
-                ft.Image(src="cert5.png", width=700),
-                ft.Image(src="cert6.png", width=700),
-                ft.Image(src="cert7.png", width=700),
-                ft.Image(src="cert8.png", width=700),
+                ft.Image(src=f"{GITHUB_BASE}/cert1.png", width=700),
+                ft.Image(src=f"{GITHUB_BASE}/cert2.png", width=700),
+                ft.Image(src=f"{GITHUB_BASE}/cert3.png", width=700),
+                ft.Image(src=f"{GITHUB_BASE}/cert4.png", width=700),
+                ft.Image(src=f"{GITHUB_BASE}/cert5.png", width=700),
+                ft.Image(src=f"{GITHUB_BASE}/cert6.png", width=700),
+                ft.Image(src=f"{GITHUB_BASE}/cert7.png", width=700),
+                ft.Image(src=f"{GITHUB_BASE}/cert8.png", width=700),
             ]
         ),
         padding=20,
